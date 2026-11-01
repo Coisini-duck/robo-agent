@@ -72,7 +72,7 @@ du -sh "$LOCALAPPDATA/hermes/models/gguf" 2>/dev/null
 # 断点续传下载 GGUF（可复用：%LOCALAPPDATA%\hermes\scripts\gguf_tool.py）
 import urllib.request
 url = "https://hf-mirror.com/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf"
-dst = r"C:\Users\INA\AppData\Local\hermes\models\gguf\qwen2.5-0.5b-instruct-q4_k_m.gguf"
+dst = r"%LOCALAPPDATA%\hermes\models\gguf\qwen2.5-0.5b-instruct-q4_k_m.gguf"
 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
 with urllib.request.urlopen(req, timeout=120) as r, open(dst, "wb") as f:
     while chunk := r.read(1 << 20):
