@@ -2,7 +2,7 @@
 name: stm32-keil-proteus
 description: STM32 in Keil + Proteus with no hardware.
 version: 1.0.0
-author: INA + Hermes
+author: robo-agent contributors
 license: MIT
 metadata:
   hermes:
@@ -40,7 +40,7 @@ metadata:
 ```bash
 for t in arm-none-eabi-gcc openocd STM32_Programmer_CLI; do command -v $t || echo "$t 未装"; done
 ls "/e/QianRuShi/Keil_v5/ARM/PACK/.Download/"     # 看装了哪些包
-ls -d "/c/Users/INA/STM32Cube/Repository"          # CubeMX 固件包仓库
+ls -d "/c/Users/<you>/STM32Cube/Repository"          # CubeMX 固件包仓库
 find /e /d -maxdepth 5 \( -iname "*.uvprojx" -o -iname "*.ioc" \) 2>/dev/null | head
 powershell -NoProfile -Command 'Get-CimInstance Win32_PnPEntity | Where-Object { $_.Name -match "COM[0-9]" -or $_.Name -match "ST-?Link|CH340|CP210" } | Select-Object -ExpandProperty Name'
 ```

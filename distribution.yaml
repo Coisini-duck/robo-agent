@@ -1,7 +1,7 @@
 name: robo-agent
 version: 0.1.0
 description: "嵌入式 / ROS 2 / VLA 部署方向的工程 bot：ROS 2 全链路、STM32 无硬件开发、文档站、本地推理与文档交付"
-author: "INA (Coisini-duck)"
+author: "Coisini-duck"
 license: "MIT"
 env_requires:
   - name: DEEPSEEK_API_KEY

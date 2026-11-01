@@ -2,7 +2,7 @@
 name: local-llm-windows-gpu
 description: Run local LLMs on a Windows NVIDIA box.
 version: 1.0.0
-author: INA + Hermes
+author: robo-agent contributors
 license: MIT
 metadata:
   hermes:
