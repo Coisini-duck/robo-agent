@@ -1,0 +1,14 @@
+name: robo-agent
+version: 0.1.0
+description: "嵌入式 / ROS 2 / VLA 部署方向的工程 bot：ROS 2 全链路、STM32 无硬件开发、文档站、本地推理与文档交付"
+hermes_requires: ">=0.20.0"
+author: "INA (Coisini-duck)"
+license: "MIT"
+env_requires:
+  - name: DEEPSEEK_API_KEY
+    description: "DeepSeek API key（默认模型供应商）"
+    required: true
+  - name: GITHUB_TOKEN
+    description: "只读 GitHub token（文档站/仓库操作）"
+    required: false
+    default: ""
