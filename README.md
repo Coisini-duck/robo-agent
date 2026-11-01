@@ -6,7 +6,11 @@
 ## 安装
 
 ```bash
-hermes profile install <repo-url> --alias
+# 从 GitHub 安装
+hermes profile install github.com/coisini-duck/robo-agent --alias
+
+# 或者本地目录（还没推上去时）
+hermes profile install <本地路径>/robo-agent --alias
 ```
 
 然后填自己的 key：
